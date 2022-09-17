@@ -1,0 +1,74 @@
+:root {
+  --size-cuadricula: 7rem;
+}
+html {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Caveat", cursive;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#lienzo {
+  width: calc(var(--size-cuadricula) * 3);
+  height: calc(var(--size-cuadricula) * 3);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+.cuadricula {
+  width: var(--size-cuadricula);
+  height: var(--size-cuadricula);
+  background-size: 100% 100%;
+}
+#cuadricula0 {
+  border-right: thick black solid;
+  border-bottom: thick black solid;
+}
+#cuadricula1 {
+  border-bottom: thick black solid;
+}
+#cuadricula2 {
+  border-left: thick black solid;
+  border-bottom: thick black solid;
+}
+#cuadricula3 {
+  border-right: thick black solid;
+  border-bottom: thick black solid;
+}
+#cuadricula4 {
+  border-bottom: thick black solid;
+}
+#cuadricula5 {
+  border-left: thick black solid;
+  border-bottom: thick black solid;
+}
+#cuadricula6 {
+  border-right: thick black solid;
+}
+#cuadricula8 {
+  border-left: thick black solid;
+}
+#mensaje {
+  font-size: 2.5rem;
+}
+button {
+  font-size: 2.5rem;
+  font-family: "Caveat", cursive;
+  padding: 0 1rem;
+  background-color: white;
+  
+}
